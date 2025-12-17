@@ -1,4 +1,4 @@
-div #cabecera {
+div.portada {
     background-color: red;
     background-image: url(../Imágenes/Portada/Cabecera.png) ;
 }
