@@ -1,9 +1,10 @@
+/* Adrián portada*/
 .portada{
     text-align: center; 
     background-color: red;
     background-image: url(../Imágenes/Portada/Cabecera.png);
     background-repeat: no-repeat;
-    border-radius: 3%;
+    border-radius: 50px;
     height: 500px;
     width: 100%;
     background-position: center;
@@ -11,23 +12,58 @@
     box-sizing: border-box;
 }
 
-footer.portada{
+
+footer.portadaaa{
     display: flex;
     justify-content: space-around;
     background-color: #222;
     color: white; 
-    padding: 20px;   
+    padding: 20px;  
+    box-sizing: border-box;
+    height: 80%;
+    background-image: url(../Imágenes/Portada/Cabecera.png);
+    background-repeat: no-repeat;
+    background-position:bottom center;
+    padding: 40px;
 }
+
 footer a{
     text-decoration: none;
     color: inherit;
 }
 
-
 .footer div{
      display: block;
     border-radius: 3%;
     height: 500px;
-    width: 30%;
+    width: 30%;    
+}
+
+body.portadaa{
+    background-color: #FFC845;
+    cursor: url(../Imágenes/Portada/cursor.cur) 16 16 auto;
+}
+
+/* Áñvaro tarjetas  */
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    margin: 8px;
+}
+
+.nombre {
+    background: red;
+    color: yellow;
+    padding: 6px 8px;
+    margin-top: 6px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    background-color: black;
     
 }
