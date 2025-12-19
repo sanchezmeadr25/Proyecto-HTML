@@ -61,16 +61,6 @@ header img {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Álvaro tarjetas  */
 
 article {
@@ -80,6 +70,7 @@ article {
 
 img{
     width: 120px;
+    height: 180px;
     border: 2px solid red;
     display: block;
 }
