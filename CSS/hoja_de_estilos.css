@@ -74,9 +74,14 @@ header img {
 /* Álvaro tarjetas  */
 
 article {
-  display: grid;
-  grid-template-columns: repeat(8, 100px);
+    display: flex;
+    flex-wrap: wrap;
+}
 
+img{
+    width: 120px;
+    border: 2px solid red;
+    display: block;
 }
 
 figure{
@@ -85,16 +90,7 @@ figure{
     align-items: center;
     width: 140px;
     margin: 8px;
-    padding: 8px;
 }
-
-figure img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-
 
 .nombre {
     background: red;
