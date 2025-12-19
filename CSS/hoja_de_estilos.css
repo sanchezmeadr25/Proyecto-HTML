@@ -47,17 +47,30 @@ body.portadaa{
 }
 
 /*Adrián Índice*/
-header {
+header  {
+  background-image: url(../Imágenes/Banner/Gemini_Generated_Image_3cn0sf3cn0sf3cn0.png);
+  background-size: 100%,contain;
+  background-position: top,center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: auto; /* o el alto que quieras */
-  overflow: hidden; /* evita que se desborde */
+  height: 250px;
+  object-fit: cover; 
 }
 
-header img {
-  width: 900px;      /* ocupa todo el ancho */
-  height: 90;     /* ocupa todo el alto */
-  object-fit: cover; /* recorta la imagen para que se ajuste sin deformarse */
+body.indice{
+    background-color: #FFC845;
+    cursor: url(../Imágenes/Portada/cursor.cur) 16 16 auto;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* Álvaro tarjetas  */
@@ -69,7 +82,6 @@ article {
 
 img{
     width: 120px;
-    height: 180px;
     border: 2px solid red;
     display: block;
 }
