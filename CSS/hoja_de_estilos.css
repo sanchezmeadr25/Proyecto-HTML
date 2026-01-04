@@ -57,10 +57,35 @@ header  {
   object-fit: cover; 
 }
 
-body.indice{
-    background-color: #FFC845;
-    cursor: url(../Imágenes/Portada/cursor.cur) 16 16 auto;
+.contenedor {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
 }
+
+main {
+  flex: 1; 
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  padding: 20px;
+  width: 250px;
+  margin-left: 20px; 
+  margin-right: 20px;
+  text-align: center;
+  align-items: center;
+}
+aside img,
+aside video {
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+
 
 
 
