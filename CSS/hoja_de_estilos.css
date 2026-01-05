@@ -409,6 +409,20 @@ body {
 
 
 /* footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor {
+  flex: 1;
+}
+
 .pie {
   display: flex;
   justify-content: space-around;
@@ -488,16 +502,3 @@ body {
 
 
 /**/
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.contenedor {
-  flex: 1;
-}
