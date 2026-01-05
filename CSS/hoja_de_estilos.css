@@ -1,93 +1,313 @@
 /* Adrián portada*/
-.portada{
-    text-align: center; 
-    background-color: red;
-    background-image: url(../Imágenes/Portada/Cabecera.png);
-    background-repeat: no-repeat;
-    border-radius: 50px;
-    height: 674px;
-    width: 100%;
-    background-position: center;
-    display: block;
-    box-sizing: border-box;
+.portada {
+  text-align: center;
+  background-color: red;
+  background-image: url(../Imágenes/Portada/Cabecera.png);
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  height: 674px;
+  width: 100%;
+  background-position: center;
+  display: block;
+  box-sizing: border-box;
 }
 
 
-footer.portadaaa{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #222;
-    color: white; 
-    padding: 20px;  
-    box-sizing: border-box;
-    height: auto;
-    background-image: url(../Imágenes/Portada/Cabecera.png);
-    background-repeat: no-repeat;
-    background-position:bottom center;
-    padding: 40px;
-    border-radius: 50px;
+footer.portadaaa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  height: auto;
+  background-image: url(../Imágenes/Portada/Cabecera.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding: 40px;
+  border-radius: 50px;
 }
 
-footer a{
-    text-decoration: none;
-    color: inherit;
+footer a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.footer div{
-     display: block;
-    border-radius: 3%;
-    margin: 10px;
-    width: 200px;    
+.footer div {
+  display: block;
+  border-radius: 3%;
+  margin: 10px;
+  width: 200px;
 }
 
-body.portadaa{
-    background-color: #FFC845;
-    cursor: url(../Imágenes/Portada/cursor.cur) 16 16 auto;
+body.portadaa {
+  background-color: #FFC845;
+  cursor: url(../Imágenes/Portada/cursor.cur) 16 16 auto;
 }
 
 /*Adrián Índice*/
-header  {
+header {
   background-image: url(../Imágenes/Banner/Gemini_Generated_Image_3cn0sf3cn0sf3cn0.png);
-  background-size: 100%,contain;
-  background-position: top,center;
+  background-size: 100%, contain;
+  background-position: top, center;
   background-repeat: no-repeat;
   width: 100%;
   height: 250px;
-  object-fit: cover; 
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
+/* Contenedor general */
 .contenedor {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: flex-start;
 }
 
-main {
-  flex: 1; 
+/* Main */
+.contenido {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
 }
 
-aside {
+/* Aside */
+.lateral {
   display: flex;
   flex-direction: column;
   background-color: red;
   padding: 20px;
   width: 250px;
-  margin-left: 20px; 
-  margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
   text-align: center;
   align-items: center;
 }
-aside img,
-aside video {
-  text-align: center;
+
+.lateral img,
+.lateral video {
   max-width: 100%;
   margin-bottom: 15px;
 }
 
+/* Fondo general */
+body {
+  background-color: #FFC845;
+  margin: 0;
+}
+
+/*iNDICE*/
+
+.bloque-indice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 100px auto 60px auto;
+  max-width: 900px;
+}
+
+.foto-indice {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.indice {
+  flex: 1;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.indice h1 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.indice ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.indice li {
+  margin: 20px 0;
+}
+
+.indice a {
+  font-size: 22px;
+  color: #d40000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.indice a:hover {
+  color: #a30000;
+  text-decoration: underline;
+}
 
 
 
+
+/*Botones para página anterior y siguiente */
+.navegacion-temario {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.boton {
+  background-color: #d40000;
+  color: white;
+  padding: 6px 12px;
+  /* 🔽 más compacto */
+  font-size: 14px;
+  /* 🔽 texto más pequeño */
+  text-decoration: none;
+  border-radius: 6px;
+  /* 🔽 esquinas más suaves */
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.boton:hover {
+  background-color: #a30000;
+}
+
+/* pRUEBA*/
+body {
+  background-color: #FFC845;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.contenido {
+  flex: 1;
+  text-align: center;
+}
+
+.indice {
+  background-color: #fff8dc;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.indice h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.indice ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.indice li {
+  margin: 12px 0;
+}
+
+.indice a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #d40000;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.indice a:hover {
+  color: #a30000;
+  text-decoration: underline;
+}
+
+.lateral {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  width: 250px;
+  margin-left: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+.lateral img,
+.lateral video {
+  max-width: 100%;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.navegacion-temario {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 15px 30px;
+}
+
+.boton {
+  background-color: #d40000;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.boton:hover {
+  background-color: #a30000;
+}
+
+.pie {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.pie ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pie a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pie a:hover {
+  text-decoration: underline;
+}
 
 
 
@@ -101,34 +321,123 @@ aside video {
 /* Álvaro tarjetas  */
 
 article {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-img{
-    width: 120px;
-    border: 2px solid red;
-    display: block;
+img {
+  width: 120px;
+  border: 2px solid red;
+  display: block;
 }
 
-figure{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 140px;
-    margin: 8px;
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+  margin: 8px;
 }
 
 .nombre {
-    background: red;
-    color: yellow;
-    padding: 6px 8px;
-    margin-top: 6px;
-    border-radius: 4px;
-    text-align: center;
-    font-weight: bold;
+  background: red;
+  color: yellow;
+  padding: 6px 8px;
+  margin-top: 6px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
 }
 
 body {
-    background-color: black;
+  background-color: #FFC845;
 }
+
+/* footer */
+.pie {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-image: url('../Imágenes/footer-fondo.jpg'); /* tu imagen */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 20px; /* 🔽 footer más pequeño */
+  gap: 20px;
+}
+
+/* Bloques pequeños */
+.pie .bloque {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;              /* 🔽 más pequeño */
+  border-radius: 10px;
+  min-width: 150px;           /* 🔽 más estrecho */
+  max-width: 220px;           /* 🔽 más compacto */
+  flex: 1 1 180px;
+}
+
+/* El bloque Legal NO se toca */
+.pie .bloque:last-child {
+  max-width: 600px;
+  flex: 1 1 600px;
+}
+
+.pie h2 {
+  font-size: 18px;            /* 🔽 más pequeño */
+  margin-bottom: 10px;
+  color: #FFD700;
+}
+
+.pie {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-image: url('../Imágenes/Portada/Cabecera.png'); /* tu imagen */
+  background-size: contain;        /* 🔄 muestra la imagen entera */
+  background-repeat: no-repeat;    /* 🔄 evita que se repita */
+  background-position: center;     /* 🔄 la centra en el footer */
+ 
+  color: white;
+  padding: 40px 20px;
+  gap: 25px;
+}
+
+
+/* Bloques pequeños */
+.pie .bloque {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;              
+  border-radius: 10px;
+  min-width: 150px;           
+  max-width: 220px;           
+  flex: 1 1 180px;
+}
+
+/* El bloque Legal NO se toca */
+.pie .bloque:last-child {
+  max-width: 600px;
+  flex: 1 1 600px;
+}
+
+.pie h2 {
+  font-size: 18px;            
+  margin-bottom: 10px;
+  color: #FFD700;
+}
+
+.pie p {
+  font-size: 14px;           
+  }
+
+
+
+
+
+
+
+
+
+
+  
