@@ -210,7 +210,7 @@ body {
   border-radius: 12px;
   max-width: 400px;
   margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .indice h1 {
@@ -245,7 +245,7 @@ body {
 .lateral {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: red;
   padding: 20px;
   width: 250px;
   margin-left: 20px;
@@ -285,7 +285,7 @@ body {
 
 .pie {
   background-color: #222;
-  color: white;
+  color: red;
   text-align: center;
   padding: 20px;
 }
@@ -310,12 +310,65 @@ body {
 }
 
 
+/************************************************************************************************************/
+.contenedor {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
 
+/* Columna izquierda: índice */
+.indice {
+  flex: 0 0 220px;               /* ancho fijo cómodo */
+  background-color: #fff8dc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
+/* Columna central: noticia */
+main {
+  flex: 1 1 500px;               /* ocupa el espacio principal */
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
 
+main h1 {
+  font-size: 28px;
+  color: #b30000;
+  margin-bottom: 20px;
+}
 
+article h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #c40000;
+}
 
+article p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
 
+/* Columna derecha: publicidad */
+.lateral {
+  flex: 0 0 260px;               /* ancho fijo para anuncios */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lateral img,
+.lateral video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 
 
 /* Álvaro tarjetas  */
@@ -353,38 +406,37 @@ body {
   background-color: #FFC845;
 }
 
+
+
 /* footer */
 .pie {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  background-image: url('../Imágenes/footer-fondo.jpg'); /* tu imagen */
+  background-image: url('../Imágenes/footer-fondo.jpg');
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 40px 20px; /* 🔽 footer más pequeño */
-  gap: 20px;
+  padding: 40px 20px;
 }
 
-/* Bloques pequeños */
 .pie .bloque {
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 15px;              /* 🔽 más pequeño */
+  padding: 15px;
   border-radius: 10px;
-  min-width: 150px;           /* 🔽 más estrecho */
-  max-width: 220px;           /* 🔽 más compacto */
+  min-width: 150px;
+  max-width: 220px;
   flex: 1 1 180px;
 }
 
-/* El bloque Legal NO se toca */
 .pie .bloque:last-child {
   max-width: 600px;
   flex: 1 1 600px;
 }
 
 .pie h2 {
-  font-size: 18px;            /* 🔽 más pequeño */
+  font-size: 18px;
   margin-bottom: 10px;
   color: #FFD700;
 }
@@ -394,11 +446,10 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  background-image: url('../Imágenes/Portada/Cabecera.png'); /* tu imagen */
-  background-size: contain;        /* 🔄 muestra la imagen entera */
-  background-repeat: no-repeat;    /* 🔄 evita que se repita */
-  background-position: center;     /* 🔄 la centra en el footer */
- 
+  background-image: url('../Imágenes/Portada/Cabecera.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
   padding: 40px 20px;
   gap: 25px;
@@ -408,10 +459,10 @@ body {
 /* Bloques pequeños */
 .pie .bloque {
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 15px;              
+  padding: 15px;
   border-radius: 10px;
-  min-width: 150px;           
-  max-width: 220px;           
+  min-width: 150px;
+  max-width: 220px;
   flex: 1 1 180px;
 }
 
@@ -422,22 +473,11 @@ body {
 }
 
 .pie h2 {
-  font-size: 18px;            
+  font-size: 18px;
   margin-bottom: 10px;
   color: #FFD700;
 }
 
 .pie p {
-  font-size: 14px;           
-  }
-
-
-
-
-
-
-
-
-
-
-  
+  font-size: 14px;
+}
