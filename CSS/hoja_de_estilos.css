@@ -294,14 +294,14 @@ body {
   background-color: #a30000;
 }
 
-.pie {
+.piee {
   background-color: #222;
   color: red;
   text-align: center;
   padding: 20px;
 }
 
-.pie ul {
+.piee ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -310,13 +310,13 @@ body {
   gap: 30px;
 }
 
-.pie a {
+.piee a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-.pie a:hover {
+.piee a:hover {
   text-decoration: underline;
 }
 
@@ -404,94 +404,169 @@ article h4 {
 
 
 /* Álvaro tarjetas  */
-
-article {
-  display: flex;
-  flex-wrap: wrap;
+/* TARJETAS — aislado para que no afecte al resto de la web */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
 }
 
-img {
-  width: 120px;
-  border: 2px solid red;
-  display: block;
+.tarjetas figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    margin: 8px;
 }
 
-figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 140px;
-  margin: 8px;
+.tarjetas img {
+    width: 120px;
+    height: 180px;
+    border: 2px solid red;
+    display: block;
 }
 
-.nombre {
-  background: red;
-  color: yellow;
-  padding: 6px 8px;
-  margin-top: 6px;
-  border-radius: 4px;
-  text-align: center;
-  font-weight: bold;
+.tarjetas .nombre {
+    background: red;
+    color: yellow;
+    padding: 6px 8px;
+    margin-top: 6px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
 }
 
+.h1Tarjetas {
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+ 
+/* Fondo general */
 body {
   background-color: #FFC845;
 }
 
+/* Carrusel de imágenes - Álvaro */
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    border: 5px solid black;
+    overflow: hidden;
+    background-color: white;
+}
 
+.tituloCarrusel{
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+    color: red;
+    margin-top: 20px;
+}
+
+.parrafoCarrusel{
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: white;
+}
+
+.slide:target {
+    z-index: 10;
+}
+
+.slide img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    display: block;
+}
+
+.flecha {
+    position: absolute;
+    top: 0;
+    height: 350px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.flecha:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.izq {
+    left: 0;
+}
+
+.der {
+    right: 0;
+}
+
+.pie {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 30;
+    background: white;
+    font-family: monospace;
+}
+
+.numeros a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+}
 
 /* footer */
 
 
-.pie {
+.piee {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  background-image: url('../Imágenes/footer-fondo.jpg');
+  background-image: url('../Imágenes/footer-fondo.jpg'); /* usa solo uno */
   background-size: cover;
   background-position: center;
-  color: white;
-  padding: 40px 20px;
-}
-
-.pie .bloque {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-  border-radius: 10px;
-  min-width: 150px;
-  max-width: 220px;
-  flex: 1 1 180px;
-}
-
-.pie .bloque:last-child {
-  max-width: 600px;
-  flex: 1 1 600px;
-}
-
-.pie h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #FFD700;
-}
-
-.pie {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  background-image: url('../Imágenes/Portada/Cabecera.png');
-  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
   color: white;
   padding: 40px 20px;
   gap: 25px;
 }
 
-
-/* Bloques pequeños */
-.pie .bloque {
+.piee .bloque {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 15px;
   border-radius: 10px;
@@ -500,25 +575,21 @@ body {
   flex: 1 1 180px;
 }
 
-/* El bloque Legal NO se toca */
-.pie .bloque:last-child {
+.piee .bloque:last-child {
   max-width: 600px;
   flex: 1 1 600px;
 }
 
-.pie h2 {
+.piee h2 {
   font-size: 18px;
   margin-bottom: 10px;
   color: #FFD700;
 }
 
-.pie p {
+.piee p {
   font-size: 14px;
 }
 
 
 
 
-
-
-/**/
